@@ -12,7 +12,7 @@ spec:
         nginx:
           stableIngress: rollouts-demo-stable
       steps:
-      - setWeight: 5
+      - setWeight: 10
       - pause: {}
   revisionHistoryLimit: 2
   selector:
@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: rollouts-demo
-        image: argoproj/rollouts-demo:blue
+        image: argoproj/rollouts-demo:green
         ports:
         - name: http
           containerPort: 8080
