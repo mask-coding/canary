@@ -74,4 +74,5 @@ spec:
         backend:
           service: 
             name: rollouts-demo-stable
-            port: 80
+            port:
+              number: 80
